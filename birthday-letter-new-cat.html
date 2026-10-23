@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy 18th Birthday Mommy 🖤🎀</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Caveat:wght@500;700&family=Special+Elite&display=swap">
+<style>
+:root{--bg:#07040a;--card:#12060e;--pink:#ff4fa3;--pink2:#ff9fd0;--ink:#ffe3f1;--glow:rgba(255,79,163,.65);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07040a;--card:#12060e;--pink:#ff4fa3;--pink2:#ff9fd0;--ink:#ffe3f1}}
+:root[data-theme="dark"]{--bg:#07040a;--card:#12060e;--pink:#ff4fa3;--pink2:#ff9fd0;--ink:#ffe3f1}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:radial-gradient(circle at 50% 20%,#2a0a1c 0,var(--bg) 60%);color:var(--ink);font-family:"Special Elite","Courier New",monospace;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.bg{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.fl{position:absolute;bottom:-40px;animation:rise linear infinite;opacity:.7;color:var(--pink);text-shadow:0 0 8px var(--glow)}
+@keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+.check{position:fixed;left:0;right:0;bottom:0;height:34px;background:repeating-conic-gradient(var(--pink) 0 25%,#000 0 50%) 0 0/34px 34px;opacity:.85;animation:slide 6s linear infinite}
+@keyframes slide{to{background-position:68px 0}}
+/* gift */
+#gift{text-align:center;cursor:pointer;z-index:2;transition:opacity .6s}
+#gift p{font-family:"Pirata One",serif;font-size:1.7rem;color:var(--pink);text-shadow:0 0 12px var(--glow);animation:pulse 1.4s ease-in-out infinite;margin:26px 0 0}
+@keyframes pulse{50%{transform:scale(1.08);opacity:.7}}
+.box{position:relative;width:200px;height:190px;margin:0 auto;animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px) rotate(-2deg)}}
+.base,.lid{position:absolute;left:0;right:0;background:#111;border:3px solid var(--pink);box-shadow:0 0 22px var(--glow),inset 0 0 18px rgba(255,79,163,.25)}
+.base{bottom:0;height:130px;border-radius:0 0 12px 12px}
+.lid{top:12px;height:56px;left:-10px;right:-10px;border-radius:10px;transition:transform .9s cubic-bezier(.2,1.4,.4,1),opacity .9s;z-index:3}
+.rib{position:absolute;background:var(--pink);box-shadow:0 0 10px var(--glow)}
+.rv{left:50%;width:30px;margin-left:-15px;top:0;bottom:0}
+.lid .rib.rv{top:-3px;bottom:-3px}
+.bow{position:absolute;top:-50px;left:50%;margin-left:-45px;width:90px;height:60px;z-index:4;transition:transform .9s cubic-bezier(.2,1.4,.4,1),opacity .9s}
+#gift.open .lid{transform:translateY(-190px) rotate(-24deg);opacity:0}
+#gift.open .bow{transform:translateY(-220px) rotate(20deg);opacity:0}
+#gift.open{pointer-events:none}
+.box .heart{position:absolute;bottom:42px;left:50%;margin-left:-16px;font-size:32px;z-index:2;color:var(--pink);text-shadow:0 0 10px var(--glow);animation:pulse 1s infinite}
+/* letter */
+#letter{display:none;z-index:3;width:min(94vw,560px);max-height:88%;margin:auto}
+#letter.show{display:block;animation:pop 1s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes pop{from{transform:translateY(160px) scale(.2) rotate(-12deg);opacity:0}to{transform:none;opacity:1}}
+.card{position:relative;background:var(--card);border:3px dashed var(--pink);border-radius:18px;padding:22px 20px 18px;box-shadow:0 0 30px var(--glow),inset 0 0 40px rgba(255,79,163,.12);max-height:86vh;overflow-y:auto;text-align:center}
+.card::before,.card::after{content:"✖";position:absolute;top:8px;color:var(--pink);font-size:14px;opacity:.8}
+.card::before{left:12px}.card::after{right:12px}
+.cat{width:110px;height:100px;animation:wig 2.4s ease-in-out infinite;filter:drop-shadow(0 0 10px var(--glow))}
+img.cat{display:none;margin:0 auto;object-fit:contain}
+@keyframes wig{25%{transform:rotate(-6deg)}75%{transform:rotate(6deg)}}
+.n18{font-family:"Pirata One",serif;font-size:5.6rem;line-height:1;margin:2px 0;color:var(--pink);text-shadow:0 0 8px var(--pink),0 0 24px var(--glow),3px 3px 0 #000;animation:flick 3s infinite}
+@keyframes flick{0%,92%,96%,100%{opacity:1}94%{opacity:.35}98%{opacity:.6}}
+h1{font-family:"Pirata One",serif;font-weight:400;font-size:1.7rem;margin:0 0 12px;color:var(--pink2);letter-spacing:1px}
+.body{font-family:"Caveat",cursive;font-size:1.45rem;line-height:1.35;text-align:left;color:var(--ink);min-height:120px}
+.body p{margin:0 0 .7em}
+.cur::after{content:"♥";color:var(--pink);margin-left:3px;animation:blink .7s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.sig{font-family:"Pirata One",serif;font-size:1.6rem;color:var(--pink);text-align:right;margin-top:6px;opacity:0;transition:opacity 1s}
+.sig.on{opacity:1}
+button{margin-top:12px;background:transparent;color:var(--pink);border:2px solid var(--pink);border-radius:30px;padding:8px 18px;font:inherit;cursor:pointer;box-shadow:0 0 10px var(--glow)}
+button:hover{background:var(--pink);color:#000}
+.cf{position:fixed;top:-20px;width:10px;height:14px;z-index:5;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(112vh) rotate(720deg)}}
+.panel{display:none;z-index:3;width:min(92vw,420px);text-align:center;margin:auto}
+.panel.show{display:block;animation:pop 1s cubic-bezier(.2,1.3,.4,1) both}
+.polaroid{position:relative;width:210px;height:230px;margin:0 auto 14px;background:#fff0f7;padding:10px 10px 36px;border-radius:6px;transform:rotate(-4deg);box-shadow:0 0 28px var(--glow),0 0 0 3px var(--pink);cursor:pointer;animation:bob 3s ease-in-out infinite}
+.polaroid::before{content:"";position:absolute;top:-14px;left:50%;width:70px;height:24px;margin-left:-35px;background:rgba(255,79,163,.7);transform:rotate(3deg)}
+.polaroid::after{content:"♥ 18 ♥";position:absolute;bottom:7px;left:0;right:0;font-family:"Pirata One",serif;font-size:1.3rem;color:#d81b7a}
+#pic{display:none;width:100%;height:100%;object-fit:cover;border-radius:3px}
+.ph{width:100%;height:100%;background:#12060e;border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--pink);font-size:.8rem;gap:6px;padding:8px}
+.mtitle{font-family:"Pirata One",serif;font-size:2.1rem;margin:0 0 4px;color:var(--pink);text-shadow:0 0 12px var(--glow)}
+.msub{margin:0 0 14px;color:var(--pink2);font-size:.9rem}
+.opt{display:block;width:100%;margin:10px 0;padding:14px 18px;font-family:"Pirata One",serif;font-size:1.5rem;background:#12060e;border:3px solid var(--pink);border-radius:40px;box-shadow:0 0 16px var(--glow);animation:pulse 2.2s ease-in-out infinite}
+.opt:nth-of-type(2){animation-delay:.4s}
+.eq{display:flex;gap:6px;justify-content:center;align-items:flex-end;height:70px;margin:14px 0}
+.eq i{width:10px;height:14px;background:var(--pink);border-radius:5px;box-shadow:0 0 10px var(--glow)}
+.playing .eq i{animation:bar .6s ease-in-out infinite alternate}
+.eq i:nth-child(2){animation-delay:.1s!important}.eq i:nth-child(3){animation-delay:.25s!important}.eq i:nth-child(4){animation-delay:.05s!important}.eq i:nth-child(5){animation-delay:.2s!important}
+@keyframes bar{to{height:66px}}
+.pbtn{width:84px;height:84px;border-radius:50%;font-size:2rem;padding:0;margin:6px auto;display:block}
+.vcard .hint{font-size:.8rem;color:var(--pink2);min-height:1.2em}
+.back{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);left:12px;z-index:9;display:none;margin:0;font-family:"Pirata One",serif;font-size:1.2rem;background:#12060e}
+.back.on{display:block}
+</style>
+</head>
+<body>
+<div class="bg" id="bg"></div>
+<div class="check"></div>
+<button class="back" id="back" onclick="show('menu')">← back to menu</button>
+
+<div id="gift" onclick="openGift()">
+  <div class="box">
+    <svg class="bow" viewBox="0 0 90 60"><path d="M45 38 C30 60 2 55 4 28 C6 6 34 14 45 34Z" fill="#ff4fa3" stroke="#000" stroke-width="3"/><path d="M45 38 C60 60 88 55 86 28 C84 6 56 14 45 34Z" fill="#ff4fa3" stroke="#000" stroke-width="3"/><circle cx="45" cy="36" r="9" fill="#ff9fd0" stroke="#000" stroke-width="3"/></svg>
+    <div class="lid"><div class="rib rv"></div></div>
+    <div class="base"><div class="rib rv"></div></div>
+    <div class="heart">♥</div>
+  </div>
+  <p>Tap me, It’s For You Mommy ♥</p>
+</div>
+
+<input type="file" id="pf" accept="image/*" hidden onchange="localPick(this,'p')">
+<input type="file" id="vf" accept="audio/*" hidden onchange="localPick(this,'v')">
+<audio id="aud" preload="auto"></audio>
+
+<div id="menu" class="panel">
+  <div class="polaroid" onclick="document.getElementById('pf').click()">
+    <img id="pic" alt="Her photo">
+    <div class="ph" id="ph"><svg width="54" height="48" viewBox="0 0 120 100"><path d="M18 40 L14 6 L48 22Z M102 40 L106 6 L72 22Z" fill="#000" stroke="#ff4fa3" stroke-width="5"/><ellipse cx="60" cy="58" rx="48" ry="36" fill="#000" stroke="#ff4fa3" stroke-width="5"/><path d="M36 46l12 12m0-12L36 58M72 46l12 12m0-12L72 58" stroke="#ff4fa3" stroke-width="6"/></svg>cutie.jpg</div>
+  </div>
+  <h2 class="mtitle">main menu</h2>
+  <p class="msub">Pick One, My birthday Girl ♥</p>
+  <button class="opt" onclick="show('letter')">💌 Read Letter</button>
+  <button class="opt" onclick="show('voice')">🎧 Hear Birthday Song</button>
+</div>
+
+<div id="voice" class="panel">
+  <div class="card vcard" id="vcard">
+    <h2 class="mtitle">A message for you</h2>
+    <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
+    <button class="pbtn" id="pbtn" onclick="playV()">▶</button>
+    <p class="hint" id="vhint"></p>
+    <button onclick="show('menu')">← main menu</button>
+  </div>
+</div>
+
+<div id="letter">
+  <div class="card">
+    <img class="cat" id="catimg" alt="">
+    <svg class="cat" id="catsvg" viewBox="0 0 120 100">
+      <path d="M18 40 L14 6 L48 22Z M102 40 L106 6 L72 22Z" fill="#000" stroke="#ff4fa3" stroke-width="3" stroke-linejoin="round"/>
+      <ellipse cx="60" cy="58" rx="48" ry="36" fill="#000" stroke="#ff4fa3" stroke-width="3"/>
+      <path d="M36 46l12 12m0-12L36 58M72 46l12 12m0-12L72 58" stroke="#ff4fa3" stroke-width="4" stroke-linecap="round"/>
+      <path d="M52 72q8 6 16 0" stroke="#ff4fa3" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M10 56l-10-3m10 9l-10 4m110-10l10-3m-10 9l10 4" stroke="#ff9fd0" stroke-width="2" stroke-linecap="round"/>
+      <g transform="translate(86 20) rotate(14)"><path d="M0 8 C-8 20 -24 16 -22 4 C-20 -8 -6 -2 0 6Z M0 8 C8 20 24 16 22 4 C20 -8 6 -2 0 6Z" fill="#ff4fa3" stroke="#000" stroke-width="2"/><circle cx="0" cy="7" r="5" fill="#ff9fd0" stroke="#000" stroke-width="2"/></g>
+    </svg>
+    <div class="n18">18</div>
+    <h1 id="title"></h1>
+    <div class="body" id="body"></div>
+    <div class="sig" id="sig"></div>
+    <button onclick="start()">↻ read again</button> <button onclick="show('menu')">← main menu</button>
+  </div>
+</div>
+
+<script>
+// ✏️ EDIT THESE ✏️
+var NAME = "Mommy";
+var FROM = "";
+var LINES = [
+  "To my pretty baddie Mommy, 🖤🎀",
+  "Happy 18th birthday, my love! ❤️",
+  "I don't even know where to start because words could never explain how lucky I am to have you. Out of all the people in this universe, I got to love someone like you, someone who matches my vibe, shares my interests, and makes me feel like I found my favorite person in the whole world.",
+  "My pretty black-loving baddie who secretly likes pink, HAHAHA. You're so special to me, Mommy, and I'm genuinely so thankful that I get to call you mine. I might actually earn the title of Lucky Kupal just because I have you. ❤️",
+  "I know you don't accept physical gifts from me, so here's a little piece of my heart instead. I want to grow with you, learn with you, teach you the things I know, and learn the things you know that I don't. I want to make more memories with you, laugh with you over the dumbest things, and hopefully grow old beside you. I want to be your last love, your one true love, and the person you can always feel safe being yourself with.",
+  "Mommy, I hope that as you turn 18, you'll continue chasing your dreams and becoming the woman you want to be. I'll always be proud of you, and I'll do my best to love you the way you deserve. I can't promise to be perfect, but I promise to keep learning how to be a better man for you.",
+  "If my love had a size, it wouldn't be ocean-sized or even universe-sized. It would be galaxy-sized and beyond, because even the whole universe couldn't measure how much Daddy loves his Mommy. 🌌❤️",
+  "Happy birthday, my pretty girl. Thank you for existing, for loving me, and for making me the luckiest kupal alive. I hope this is just one of the many birthdays I'll get to celebrate with you.",
+  "I love you so much, Mommy. Today, tomorrow, and hopefully until we're old and gray.",
+  "Forever your Daddy,",
+  "Your Lucky Kupal. 🖤🎀❤️"
+];
+var timer, run = 0;
+var PHOTO = "", VOICE = ""; 
+var PHOTO_FILES = ["assets/cutie.jpg"];
+var VOICE_FILES = ["assets/voice.mp3"];
+var CAT_FILES = ["assets/cat.png","assets/cat.gif","assets/cat.jpg","assets/cat.webp"];
+function tryImg(l,i){if(i>=l.length)return;var m=new Image();m.onload=function(){setPhoto(l[i])};m.onerror=function(){tryImg(l,i+1)};m.src=l[i]}
+function tryAud(l,i){if(i>=l.length)return;var t=new Audio();t.addEventListener("loadedmetadata",function(){document.getElementById("aud").src=l[i];vhint()});t.addEventListener("error",function(){tryAud(l,i+1)});t.src=l[i];t.load()}
+function tryCat(l,i){if(i>=l.length)return;var m=new Image();m.onload=function(){var c=document.getElementById("catimg");c.src=l[i];c.style.display="block";document.getElementById("catsvg").style.display="none"};m.onerror=function(){tryCat(l,i+1)};m.src=l[i]}
+function setPhoto(s){var p=document.getElementById("pic");p.src=s;p.style.display="block";document.getElementById("ph").style.display="none"}
+function show(id){
+  ["menu","voice","letter"].forEach(function(x){var e=document.getElementById(x);
+    e.className=(x===id)?(x==="letter"?"show":"panel show"):(x==="letter"?"":"panel")});
+  run++;stopV();document.getElementById("back").className="back"+(id==="menu"?"":" on");
+  if(id==="letter")start();
+  if(id==="voice")vhint();
+}
+function vhint(){document.getElementById("vhint").textContent=document.getElementById("aud").src?"tap play ♥":"no voice message added yet — tap play to preview a file"}
+function stopV(){var a=document.getElementById("aud");a.pause();document.getElementById("vcard").classList.remove("playing");document.getElementById("pbtn").textContent="▶"}
+function playV(){
+  var a=document.getElementById("aud");
+  if(!a.src){document.getElementById("vf").click();return}
+  if(a.paused){a.play();document.getElementById("vcard").classList.add("playing");document.getElementById("pbtn").textContent="❚❚"}else stopV();
+}
+function localPick(inp,t){
+  var f=inp.files[0];if(!f)return;var u=URL.createObjectURL(f);
+  if(t==="p")setPhoto(u);else{var a=document.getElementById("aud");a.src=u;vhint();playV()}
+}
+window.addEventListener("load",function(){
+  var a=document.getElementById("aud");
+  a.addEventListener("ended",stopV);
+  if(PHOTO)setPhoto(PHOTO);else tryImg(PHOTO_FILES,0);
+  if(VOICE)a.src=VOICE;else tryAud(VOICE_FILES,0);
+  tryCat(CAT_FILES,0);
+});
+function sp(t,n){return t.split("{name}").join(n)}
+function openGift(){
+  var g=document.getElementById("gift");g.classList.add("open");confetti(70);
+  setTimeout(function(){g.style.opacity=0},700);
+  setTimeout(function(){g.style.display="none";show("menu");confetti(30)},1100);
+}
+function start(){
+  var my=++run,b=document.getElementById("body"),s=document.getElementById("sig");
+  document.getElementById("title").textContent="happy birthday, "+NAME+" 🖤";
+  b.innerHTML="";s.className="sig";s.textContent=FROM?"— "+FROM+" 🎀":"";
+  var i=0;
+  (function next(){
+    if(my!==run)return;
+    if(i>=LINES.length){s.className="sig on";confetti(40);return}
+    var p=document.createElement("p");p.className="cur";b.appendChild(p);
+    var t=sp(LINES[i++],NAME),k=0;
+    (function ty(){
+      if(my!==run)return;
+      p.textContent=t.slice(0,++k);
+      b.parentNode.scrollTop=b.parentNode.scrollHeight;
+      if(k<t.length){setTimeout(ty,14)}else{p.className="";setTimeout(next,350)}
+    })();
+  })();
+}
+function confetti(n){
+  var c=["#ff4fa3","#ff9fd0","#ffffff","#1a1a1a"];
+  for(var i=0;i<n;i++){var d=document.createElement("div");d.className="cf";
+    d.style.left=Math.random()*100+"vw";d.style.background=c[i%4];
+    d.style.border="1px solid #ff4fa3";
+    d.style.animationDuration=(2+Math.random()*2.5)+"s";d.style.animationDelay=Math.random()*.6+"s";
+    document.body.appendChild(d);setTimeout(function(x){x.remove()}.bind(null,d),5500)}
+}
+(function(){
+  var bg=document.getElementById("bg"),sy=["♥","✦","✖","★","♡","🎀","🦇"];
+  for(var i=0;i<22;i++){var e=document.createElement("span");e.className="fl";
+    e.textContent=sy[i%sy.length];e.style.left=Math.random()*100+"vw";
+    e.style.fontSize=(14+Math.random()*22)+"px";
+    e.style.animationDuration=(7+Math.random()*9)+"s";e.style.animationDelay=(-Math.random()*12)+"s";
+    bg.appendChild(e)}
+})();
+</script>
+</body>
+</html>
